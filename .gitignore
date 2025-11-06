@@ -1,0 +1,6 @@
+# Mac
+._*
+.DS_Store
+
+# Grist Files
+persist

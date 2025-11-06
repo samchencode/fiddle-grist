@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+RUN_DIR="$(pwd)"
+SCRIPT_FILE="$(realpath "$0")"
+SCRIPT_DIR="$(dirname "$SCRIPT_FILE")"
+PROJECT_DIR=$(dirname "$SCRIPT_DIR")
+source "$SCRIPT_DIR/activate.sh"
+cd "$PROJECT_DIR"
+
+docker compose up -d
+
+cd "$RUN_DIR"
